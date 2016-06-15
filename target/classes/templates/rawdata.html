@@ -1,0 +1,35 @@
+<!-- <html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"> -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body bgcolor="#6699FF" border="1" style="width:100%">
+	<div class="container">
+
+		<div th:if="${not #lists.isEmpty(metrics)}">
+
+			<h2>List of Values</h2>
+			<table class="table table-stripped">
+				<tr>
+					<th>Time-Stamp</th>
+					<th>Values</th>
+				</tr>
+				<tr th:each="metric : ${metrics}">
+					<td th:text="${metric.timestamp}"></td>
+					<td th:text="${metric.value}"></td>
+				</tr>
+			</table>
+
+		</div>
+
+	</div>
+	<!-- 	<h2>LIST of VAL</h2>
+	<tr th:each="metric:${metrics}">
+		<td th:text="${metric.timestamp}" />
+		<td th:text="${metric.value}" />
+	</tr> -->
+</body>
+</html>
