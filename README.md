@@ -34,29 +34,36 @@ Running the data through different rules to make basic predictions
 
 Exposed the below Metric APIs using Spring MVC
 
-  o create – This is the API that will consume data from the sensor emulator
-    path: http://localhost:8080/create
+    o create – This is the API that will consume data from the sensor emulator
+  
+      path: http://localhost:8080/create
 
-  o read – Reads all the metrics stored in your database
-    path: http://localhost:8080/read/metrics
+    o read – Reads all the metrics stored in your database
+  
+      path: http://localhost:8080/read/metrics
 
-  o readByTimeRange – Reads all the metrics that were created between the given two timestamps
-    path: http://localhost:8080/read/metrics/timerange?startdate=06-15-2016 15:00:00&enddate=06-15-2016 15:55:35
+    o readByTimeRange – Reads all the metrics that were created between the given two timestamps
+  
+      path: http://localhost:8080/read/metrics/timerange?startdate=06-15-2016 15:00:00&enddate=06-15-2016 15:55:35
 
-  o delete : Deletes all metrics from the collection
-    path: http://localhost:8080/delete/metrics
+    o delete : Deletes all metrics from the collection
+  
+      path: http://localhost:8080/delete/metrics
 
 
 Exposed the below Alert APIs using Spring MVC
 
-  o read – Reads all alerts that are stored in the database
-    path: http://localhost:8080/read/alerts
+    o read – Reads all alerts that are stored in the database
+  
+      path: http://localhost:8080/read/alerts
 
-  o readByTimeRange – Reads all alerts that are created between the given two timestamps
-    path: http://localhost:8080/read/alerts/timerange?startdate=06-15-2016 15:00:00&enddate=06-15-2016 15:55:35
+    o readByTimeRange – Reads all alerts that are created between the given two timestamps
+  
+      path: http://localhost:8080/read/alerts/timerange?startdate=06-15-2016 15:00:00&enddate=06-15-2016 15:55:35
 
-  o delete : Deletes all alerts from the collection
-    path: http://localhost:8080/delete/metrics
+    o delete : Deletes all alerts from the collection
+  
+      path: http://localhost:8080/delete/metrics
 
 ## JSON Responses
 
