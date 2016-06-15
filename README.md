@@ -4,11 +4,11 @@ The goal of this exercise is to build a system that works like an IoT platform �
 
 This system is responsible for the following:
 
- Consuming data sent from different sensors (emulators)
+Consuming data sent from different sensors (emulators)
 
- Storing the received data in MongoDB
+Storing the received data in MongoDB
 
- Running the data through different rules to make basic predictions
+Running the data through different rules to make basic predictions
 
 ## Technologies/Frameworks
 
@@ -24,15 +24,15 @@ This system is responsible for the following:
 
 ## Overview
 
- Used MongoDB as the datastore with two collections
+Used MongoDB as the datastore with two collections
 
- Metrics – stores the data that comes from sensor
+Metrics – stores the data that comes from sensor
 
- Alerts – stores the alerts that were created by the rules
+Alerts – stores the alerts that were created by the rules
 
 ## API Reference
 
- Exposed the below Metric APIs using Spring MVC
+Exposed the below Metric APIs using Spring MVC
 
   o create – This is the API that will consume data from the sensor emulator
     path: http://localhost:8080/create
@@ -46,7 +46,8 @@ This system is responsible for the following:
   o delete : Deletes all metrics from the collection
     path: http://localhost:8080/delete/metrics
 
- Exposed the below Alert APIs using Spring MVC
+
+Exposed the below Alert APIs using Spring MVC
 
   o read – Reads all alerts that are stored in the database
     path: http://localhost:8080/read/alerts
