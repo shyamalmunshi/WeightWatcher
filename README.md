@@ -63,7 +63,7 @@
 
     o delete : Deletes all alerts from the collection
   
-      path: http://localhost:8080/delete/metrics
+      path: http://localhost:8080/delete/alerts
 
 ## JSON Responses
 
@@ -106,7 +106,7 @@
 
  Develop UI
 
- Add Lumbok support
+ Add Project Lombok support
 
 ## Contributors
 
