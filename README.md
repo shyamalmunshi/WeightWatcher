@@ -1,6 +1,6 @@
 ## Synopsis
 
-    The goal of this exercise is to build a system that works like an IoT platform – in this case, a personal weight tracker.
+    The goal of this exercise is to build a system that works like an IoT platform, for instance a personal weight tracker.
     
     This system is responsible for the following:
     
