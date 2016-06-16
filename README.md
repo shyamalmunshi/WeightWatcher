@@ -76,7 +76,7 @@
       "timestamp": "1466021263862"
     }
     
-    Alerts:
+    Alerts: Added additional fields (base_weight and observation) to add value to the data and make it scalable for further predicitions.
     
     {
       "value": 166,
